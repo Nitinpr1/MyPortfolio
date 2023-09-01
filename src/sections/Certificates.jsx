@@ -20,7 +20,7 @@ const Certificates = () => {
       <h2 className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10">
         Certificates
       </h2>
-      <div className=" w-full mb-10 h-2/3  border-2">
+      <div className=" w-full mb-10 h-2/3">
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
