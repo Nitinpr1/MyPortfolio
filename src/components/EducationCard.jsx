@@ -6,7 +6,7 @@ const EducationCard = ({ name, collage, city, time, comment }) => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className=" rounded-[20px] shadow-3xl px-10 py-10 bg-slate-50 dark:bg-gray-900"
+      className=" w-full rounded-[20px] shadow-3xl px-10 py-10 bg-slate-50 dark:bg-gray-900"
     >
       <img src={education} width={70} alt="img" />
 

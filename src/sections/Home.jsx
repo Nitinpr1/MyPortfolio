@@ -24,15 +24,15 @@ const Home = () => {
     >
       <div className="relative xl:w-3/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-10">
         <h1
-          data-aos="fade-bottom"
+          data-aos="fade-down"
           data-aos-duration="1000"
-          className=" mt-20 md:mt-0 font-palanquin text-3xl md:text-8xl font-bold  "
+          className=" mt-20 md:mt-0 font-palanquin text-[40px] md:text-8xl font-bold"
         >
           <span className="pr-3 text-coral-red">Nitin</span>
           <span>Prajapati </span>
         </h1>
         <p
-          data-aos="fade-bottom"
+          data-aos="fade-down"
           data-aos-duration="1000"
           className="font-montserrat text-slate-gray text-lg leading-8 mt-1 mb-1 sm:max-w-sm p-2"
         >
@@ -40,7 +40,7 @@ const Home = () => {
         </p>
         <br />
         <p
-          data-aos="fade-bottom"
+          data-aos="fade-down"
           data-aos-duration="1000"
           className="font-montserrat text-slate-gray text-lg mt-1 mb-5 w-full text-justify p-2"
         >
