@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-//import { toast } from "react-hot-toast";
+
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactMe = ({ onClose }) => {
   const form = useRef();
@@ -18,6 +19,10 @@ const ContactMe = ({ onClose }) => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Message sent successfully !!");
+          setTimeout(() => {
+            onClose();
+          }, 2000);
         },
         (error) => {
           console.log(error.text);
@@ -25,12 +30,12 @@ const ContactMe = ({ onClose }) => {
       );
 
     e.target.reset();
-    onClose();
   };
 
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-black dark:bg-white dark:bg-opacity-5 bg-opacity-50 z-10">
-      <div className="bg-red-50 p-6 rounded shadow-md w-[400px] font-montserrat dark:bg-slate-900 dark:text-white">
+      <Toaster />
+      <div className="bg-red-50 p-6 rounded shadow-md   font-montserrat dark:bg-slate-900 dark:text-white">
         <h2 className="text-2xl text-coral-red text-center font-montserrat font-semibold mb-4">
           Contact Me
         </h2>

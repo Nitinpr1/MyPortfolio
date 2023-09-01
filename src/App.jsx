@@ -33,7 +33,7 @@ const App = () => {
       <section className="padding-x py-5 bg-slate-50 dark:bg-slate-800">
         <Certificates />
       </section>
-      <section className="padding-x py-5 bg-black ">
+      <section className="padding-x py-5 bg-black">
         <Footer />
       </section>
     </main>

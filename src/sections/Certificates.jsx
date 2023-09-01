@@ -20,10 +20,10 @@ const Certificates = () => {
       <h2 className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10">
         Certificates
       </h2>
-      <div className=" w-full mb-10 h-2/3 ">
+      <div className=" w-full mb-10 h-2/3  border-2">
         <div
-          data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="w-full scroll-pl-6  flex snap-x snap-mandatory overflow-y-hidden gap-5 px-5 py-10 stylescroll"
         >
           <div className="flex scroll-ml-6 snap-start flex-shrink-0">

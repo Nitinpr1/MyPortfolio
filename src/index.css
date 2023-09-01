@@ -33,19 +33,6 @@
   }
 }
 
-@layer base {
-  html {
-    scroll-snap-type: x mandatory;
-  }
-  body {
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  .snap-center {
-    scroll-snap-align: center;
-  }
-}
-
 @layer utilities {
   .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;
