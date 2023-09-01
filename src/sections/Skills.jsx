@@ -9,7 +9,7 @@ const Skills = () => {
     >
       <div
         data-aos="flip-up"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         className="md:w-2/4 w-full"
       >
         <h1 className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10">

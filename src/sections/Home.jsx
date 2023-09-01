@@ -25,7 +25,7 @@ const Home = () => {
       <div className="relative xl:w-3/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-10">
         <h1
           data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           className=" mt-20 md:mt-0 font-palanquin text-4xl sm:text-8xl font-bold  "
         >
           <span className="pr-3 text-coral-red">Nitin</span>
@@ -33,7 +33,7 @@ const Home = () => {
         </h1>
         <p
           data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           className="font-montserrat text-slate-gray text-lg leading-8 mt-1 mb-1 sm:max-w-sm p-2"
         >
           Full Stack Web Developer
@@ -41,7 +41,7 @@ const Home = () => {
         <br />
         <p
           data-aos="fade-right"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           className="font-montserrat text-slate-gray text-lg mt-1 mb-5 w-full text-justify p-2"
         >
           I am a passionate Full Stack Web Developer with expertise in Dotnet
@@ -53,7 +53,7 @@ const Home = () => {
 
         <div
           data-aos="fade-left"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           className="flex flex-row justify-center items-center mt-1 gap-10 w-full"
         >
           <a
@@ -76,7 +76,7 @@ const Home = () => {
         <div className="flex flex-row flex-wrap justify-center items-center mt-10 gap-4 w-full">
           <button
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             onClick={openForm}
             className="bg-coral-red p-4 text-white text-lg rounded-full w-60 shadow-lg hover:shadow-red-900"
           >
@@ -87,7 +87,7 @@ const Home = () => {
 
           <a
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             href="#projects"
             className="bg-white text-center border-2 text-red-500 p-4 text-lg rounded-full w-60 shadow-lg hover:shadow-red-500"
           >
@@ -97,7 +97,7 @@ const Home = () => {
       </div>
       <div
         data-aos="fade-left"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         className="relative flex-1 flex justify-center items-center xl:min-h-screen p-10 rounded-xl bg-cover bg-center "
       >
         <img

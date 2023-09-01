@@ -4,7 +4,7 @@ const ProjectCard = ({ imgURL, name, comment, livelink, githublink }) => {
   return (
     <div
       data-aos="zoom-out-up"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       className="bg-white rounded-lg shadow-lg drop-shadow-2xl hover:bg-slate-200 hover:scale-105 duration-500 dark:bg-slate-900"
     >
       <div className="flex flex-1 flex-col w-full max-sm:w-full cursor-pointe  ">

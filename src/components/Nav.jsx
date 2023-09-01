@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <header
       data-aos="fade-down"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       className="padding-x py-5  absolute z-10 w-full"
     >
       <nav className="flex justify-between items-center max-container">

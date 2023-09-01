@@ -62,7 +62,7 @@ const Certificates = () => {
       </div>
       <div
         data-aos="fade-right"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         className="flex flex-col justify-center items-center m-28 w-full"
       >
         <h3 className="m-10 font-montserrat text-3xl font-semibold">
