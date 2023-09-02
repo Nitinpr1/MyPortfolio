@@ -35,7 +35,7 @@ const ContactMe = ({ onClose }) => {
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-black dark:bg-white dark:bg-opacity-5 bg-opacity-50 z-10">
       <Toaster />
-      <div className="bg-red-50 p-6 rounded shadow-md   font-montserrat dark:bg-slate-900 dark:text-white">
+      <div className="bg-red-50 p-6 rounded shadow-md   font-montserrat dark:bg-slate-900 dark:text-coral-red">
         <h2 className="text-2xl text-coral-red text-center font-montserrat font-semibold mb-4">
           Contact Me
         </h2>
