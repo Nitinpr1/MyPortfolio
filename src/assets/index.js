@@ -15,6 +15,7 @@ import microsoft from "./microsoft.jpg";
 import devtown from "./devtown.jpg";
 import GDclub from "./GDclub.jpg";
 import nplogo from "./nplogo.png";
+import file from "./file.png";
 
 export {
   instagram,
@@ -34,4 +35,5 @@ export {
   devtown,
   GDclub,
   nplogo,
+  file,
 };

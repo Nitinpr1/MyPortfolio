@@ -5,6 +5,7 @@ import Projects from "./sections/Projects";
 import Education from "./sections/Education";
 import Certificates from "./sections/Certificates";
 import Footer from "./sections/Footer";
+import DownloadResume from "./components/DownloadResume";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,6 +37,7 @@ const App = () => {
       <section className="padding-x py-5 bg-black">
         <Footer />
       </section>
+      <DownloadResume />
     </main>
   );
 };
