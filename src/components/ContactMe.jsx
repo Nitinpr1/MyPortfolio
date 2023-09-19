@@ -88,7 +88,7 @@ const ContactMe = ({ onClose }) => {
                 rows={4}
                 id="inputmsg"
                 className="outline-none bg-slate-200 p-2 rounded-lg"
-                placeholder="Enter your name"
+                placeholder="Enter your message"
                 required
               />
             </div>
