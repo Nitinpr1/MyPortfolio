@@ -20,19 +20,33 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-1 max-container"
+      className="w-full flex xl:flex-row flex-col justify-center items-center max-container"
     >
-      <div className="relative xl:w-3/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-10">
+      <div
+        data-aos="zoom-out-up"
+        data-aos-duration="1000"
+        className="flex justify-center items-center xl:min-h-screen rounded-xl mt-[140px] md:hidden"
+      >
+        <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[150px]  h-[170px]  rounded-xl rotate-12 border"></div>
+        <img
+          src={nitinnew}
+          alt="Nitin Prajapati"
+          width={150}
+          height={70}
+          className="object-contain absolute rounded-xl shadow-3xl border hover:rotate-6 duration-500"
+        />
+      </div>
+      <div className="relative xl:w-3/5 flex flex-col  justify-center items-start w-full  max-xl:padding-x pt-10">
         <h1
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="1000"
-          className=" mt-20 md:mt-0 font-palanquin text-[40px] md:text-8xl font-bold"
+          className="md:mt-0 font-palanquin text-[40px] md:text-8xl font-bold"
         >
           <span className="pr-3 text-coral-red">Nitin</span>
           <span>Prajapati </span>
         </h1>
         <p
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="1000"
           className="font-montserrat text-slate-gray text-lg leading-8 mt-1 mb-1 sm:max-w-sm p-2"
         >
@@ -40,7 +54,7 @@ const Home = () => {
         </p>
         <br />
         <p
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="1000"
           className="font-montserrat text-slate-gray text-lg mt-1 mb-5 w-full text-justify p-2"
         >
@@ -96,16 +110,17 @@ const Home = () => {
         </div>
       </div>
       <div
-        data-aos="fade-up"
+        data-aos="zoom-out-up"
         data-aos-duration="1000"
-        className="relative flex-1 flex justify-center items-center xl:min-h-screen p-10 rounded-xl bg-cover bg-center "
+        className="flex-1 md:flex justify-center items-center xl:min-h-screen rounded-xl mt-10 md:mt-0 hidden"
       >
+        <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[260px] md:w-[280px] h-[300px] md:h-[310px] rounded-2xl rotate-12 border-2"></div>
         <img
           src={nitinnew}
           alt="Nitin Prajapati"
-          width={300}
-          height={290}
-          className="object-contain relative rounded-3xl shadow-3xl border-2 hover:scale-125 duration-700"
+          width={280}
+          height={270}
+          className="object-contain absolute rounded-3xl shadow-3xl border-2 hover:rotate-6 duration-500"
         />
       </div>
     </section>

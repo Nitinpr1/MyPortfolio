@@ -10,7 +10,7 @@ const EducationCard = ({ name, collage, city, time, comment }) => {
     >
       <img src={education} width={70} alt="img" />
 
-      <h1 className="mt-5 font-palanquin text-3xl leading-normal font-bold text-red-500">
+      <h1 className="mt-5 font-palanquin text-xl md:text-3xl leading-normal font-bold text-red-500">
         {name} ( {time})
       </h1>
       <p className="mt-3 break-words font-montserrat text-lg leading-normal">
@@ -19,7 +19,7 @@ const EducationCard = ({ name, collage, city, time, comment }) => {
       <p className="mt-3 break-words font-montserrat text-lg leading-normal">
         {city}
       </p>
-      <p className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray text-justify">
+      <p className="mt-3 break-words font-montserrat text-sm md:text-lg leading-normal text-slate-gray text-justify">
         {comment}
       </p>
     </div>

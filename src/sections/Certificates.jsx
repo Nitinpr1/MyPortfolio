@@ -1,6 +1,7 @@
-import { microsoft, devtown, GDclub } from "../assets";
 import { useState } from "react";
 import ContactMe from "../components/ContactMe";
+import ImageSlider from "../components/ImageSlider";
+import { imgUrls } from "../constants";
 
 const Certificates = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -20,52 +21,17 @@ const Certificates = () => {
       <h2 className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10">
         Certificates
       </h2>
-      <div className=" w-full mb-10 h-2/3">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="w-full scroll-pl-6  flex snap-x snap-mandatory overflow-y-hidden gap-5 px-5 py-10 stylescroll"
-        >
-          <div className="flex scroll-ml-6 snap-start flex-shrink-0">
-            <div className="flex-1  sm:w-[500px] w-full rounded-[20px] shadow-3xl p-5 bg-slate-50 dark:bg-slate-900">
-              <img
-                src={microsoft}
-                width={500}
-                className="rounded-[10px]"
-                alt="img"
-              />
-            </div>
-          </div>
 
-          <div className="flex scroll-ml-6 snap-start flex-shrink-0">
-            <div className="flex-1  sm:w-[500px] w-full rounded-[20px] shadow-3xl p-5 bg-slate-50 dark:bg-slate-900">
-              <img
-                src={devtown}
-                width={500}
-                className="rounded-[10px]"
-                alt="img"
-              />
-            </div>
-          </div>
-
-          <div className="flex scroll-ml-6 snap-start flex-shrink-0">
-            <div className="flex-1  sm:w-[500px] w-full rounded-[20px] shadow-3xl p-5 bg-slate-50 dark:bg-slate-900">
-              <img
-                src={GDclub}
-                width={500}
-                className="rounded-[10px]"
-                alt="img"
-              />
-            </div>
-          </div>
-        </div>
+      <div className=" md:w-[700px] sm:w-auto">
+        <ImageSlider slides={imgUrls} />
       </div>
+
       <div
         data-aos="fade-right"
         data-aos-duration="1000"
         className="flex flex-col justify-center items-center m-28 w-full"
       >
-        <h3 className="m-10 font-montserrat text-3xl font-semibold">
+        <h3 className="m-10 font-montserrat text-2xl md:text-3xl font-semibold">
           " Let's collaborate to turn your digital vision into reality "
         </h3>
         <button

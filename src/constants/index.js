@@ -5,6 +5,9 @@ import {
   instabanner,
   nikelanding,
   sushi,
+  microsoft,
+  devtown,
+  GDclub,
 } from "../assets";
 
 export const navLinks = [
@@ -14,6 +17,8 @@ export const navLinks = [
   { href: "#education", label: "Education" },
   { href: "#certificates", label: "Certificates" },
 ];
+
+export const imgUrls = [microsoft, devtown, GDclub];
 
 export const skills = [
   {

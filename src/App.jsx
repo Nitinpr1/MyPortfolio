@@ -17,9 +17,9 @@ const App = () => {
   }, []);
 
   return (
-    <main className="relative bg-red-50 dark:bg-slate-800 dark:text-white">
+    <main className="relative bg-white  dark:bg-slate-800 dark:text-white bg-gradient-to-r from-orange-200 dark:from-slate-900">
       <Nav />
-      <section className="xl:padding-l wide:padding-r">
+      <section className="xl:padding-l wide:padding-r ">
         <Home />
       </section>
       <section className="padding">
@@ -31,7 +31,7 @@ const App = () => {
       <section className="padding">
         <Education />
       </section>
-      <section className="padding-x py-5 bg-slate-50 dark:bg-slate-800">
+      <section className="padding-x py-5 bg-red-50 dark:bg-slate-800">
         <Certificates />
       </section>
       <section className="padding-x py-5 bg-black">
