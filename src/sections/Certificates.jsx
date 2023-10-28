@@ -22,7 +22,8 @@ const Certificates = () => {
         Certificates
       </h2>
 
-      <div className=" md:w-[700px] sm:w-auto">
+      <div   data-aos="fade-up"
+      data-aos-duration="1000" className=" md:w-[700px] sm:w-auto">
         <ImageSlider slides={imgUrls} />
       </div>
 
