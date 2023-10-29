@@ -8,6 +8,7 @@ import {
   microsoft,
   devtown,
   GDclub,
+  chatapp,
 } from "../assets";
 
 export const navLinks = [
@@ -72,6 +73,14 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    imgURL: chatapp,
+    name: "Chat App",
+    comment:
+      "Real time chat app using React.js , Tailwind CSS and Appwrite cloud",
+    livelink: "https://chatapp-5ufopr1y5-nitinpr1.vercel.app/",
+    githublink: "https://github.com/Nitinpr1/chatapp",
+  },
   {
     imgURL: utube,
     name: "YouTube Clone",

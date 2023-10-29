@@ -16,6 +16,7 @@ import devtown from "./devtown.jpg";
 import GDclub from "./GDclub.jpg";
 import nplogo from "./nplogo.png";
 import file from "./file.png";
+import chatapp from "./chatapp.png";
 
 export {
   instagram,
@@ -36,4 +37,5 @@ export {
   GDclub,
   nplogo,
   file,
+  chatapp,
 };
