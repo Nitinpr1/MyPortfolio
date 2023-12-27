@@ -17,6 +17,7 @@ import GDclub from "./GDclub.jpg";
 import nplogo from "./nplogo.png";
 import file from "./file.png";
 import chatapp from "./chatapp.png";
+import buszz from "./buszz.png";
 
 export {
   instagram,
@@ -38,4 +39,5 @@ export {
   nplogo,
   file,
   chatapp,
+  buszz,
 };

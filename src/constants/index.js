@@ -9,6 +9,7 @@ import {
   devtown,
   GDclub,
   chatapp,
+  buszz,
 } from "../assets";
 
 export const navLinks = [
@@ -125,6 +126,14 @@ export const projects = [
     comment: "Sushi Shop using HTML, CSS and JavaScript",
     livelink: "https://sushishop1.netlify.app/",
     githublink: "https://github.com/Nitinpr1/Sushi_shop",
+  },
+  {
+    imgURL: buszz,
+    name: "Buszz",
+    comment:
+      "Buszz- bus booking landing page using HTML, CSS and Animate on scroll (AOS).",
+    livelink: "https://nitinpr1.github.io/buszz/",
+    githublink: "https://github.com/Nitinpr1/buszz",
   },
 ];
 
