@@ -79,7 +79,7 @@ export const projects = [
     name: "Chat App",
     comment:
       "Real time chat app using React.js , Tailwind CSS and Appwrite cloud",
-    livelink: "https://chatapp-5ufopr1y5-nitinpr1.vercel.app/",
+    livelink: "https://chatapp-rosy-tau.vercel.app/",
     githublink: "https://github.com/Nitinpr1/chatapp",
   },
   {
