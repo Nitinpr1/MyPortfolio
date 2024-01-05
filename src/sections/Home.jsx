@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center items-center max-container"
+      className="w-full flex xl:flex-row flex-col justify-center items-center max-container gap-10 md:flex-col-reverse"
     >
       <div
         data-aos="zoom-out-up"
@@ -36,7 +36,7 @@ const Home = () => {
           className="object-contain absolute rounded-xl shadow-3xl border hover:rotate-6 duration-500"
         />
       </div>
-      <div className="relative xl:w-3/5 flex flex-col  justify-center items-start w-full  max-xl:padding-x pt-10">
+      <div className="relative xl:w-3/5 flex flex-col  justify-center items-start w-full  max-xl:padding-x pt-10  xl:mt-20">
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -48,7 +48,7 @@ const Home = () => {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="font-montserrat text-slate-gray text-lg leading-8 mt-1 mb-1 sm:max-w-sm p-2"
+          className="font-montserrat text-slate-gray text-lg leading-8 mt-1 sm:max-w-sm p-2"
         >
           Full Stack Web Developer
         </p>
@@ -56,7 +56,7 @@ const Home = () => {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="font-montserrat text-slate-gray text-lg mt-1 mb-5 w-full text-justify p-2"
+          className="font-montserrat text-slate-gray text-lg  mb-5 w-full text-justify p-2"
         >
           I am a passionate Full Stack Web Developer with expertise in Dotnet
           Framework. From crafting engaging user interfaces to building robust
@@ -112,7 +112,7 @@ const Home = () => {
       <div
         data-aos="zoom-out-up"
         data-aos-duration="1000"
-        className="flex-1 md:flex justify-center items-center xl:min-h-screen rounded-xl mt-10 md:mt-0 hidden"
+        className="flex-1 md:flex justify-center items-center xl:min-h-screen rounded-xl mt-10 hidden md:mt-40 xl:mt-20"
       >
         <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[260px] md:w-[280px] h-[300px] md:h-[310px] rounded-2xl rotate-12 border-2"></div>
         <img

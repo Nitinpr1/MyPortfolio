@@ -3,7 +3,7 @@ const SkillCard = ({ name, value }) => {
     <div
       data-aos="zoom-in-up"
       data-aos-duration="1000"
-      className="w-full h-auto flex flex-col gap-10"
+      className="w-full h-auto flex flex-col"
     >
       <div className="flex gap-5 p-2">
         <div className="w-[180px] bg-gray-200 dark:bg-slate-900 rounded-full p-1">
