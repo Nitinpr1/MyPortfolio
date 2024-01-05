@@ -19,7 +19,7 @@ const DownloadResume = () => {
         data-tooltip-id="my-tooltip-inline"
         data-tooltip-content="Get Resume"
       >
-        <img src={file} alt="img" width={35} />
+        <img src={file} alt="img" width={32} />
       </button>
       <Tooltip
         id="my-tooltip-inline"

@@ -36,7 +36,7 @@ const Home = () => {
           className="object-contain absolute rounded-xl shadow-3xl border hover:rotate-6 duration-500"
         />
       </div>
-      <div className="relative xl:w-3/5 flex flex-col  justify-center items-start w-full  max-xl:padding-x pt-10  xl:mt-20">
+      <div className="relative xl:w-3/5 flex flex-col  justify-center items-start w-full  max-xl:padding-x pt-10  xl:mt-10">
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -112,7 +112,7 @@ const Home = () => {
       <div
         data-aos="zoom-out-up"
         data-aos-duration="1000"
-        className="flex-1 md:flex justify-center items-center xl:min-h-screen rounded-xl mt-10 hidden md:mt-40 xl:mt-20"
+        className="flex-1 md:flex justify-center items-center xl:min-h-screen rounded-xl mt-10 hidden md:mt-40 xl:mt-10"
       >
         <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[260px] md:w-[280px] h-[300px] md:h-[310px] rounded-2xl rotate-12 border-2"></div>
         <img

@@ -6,6 +6,7 @@ import Education from "./sections/Education";
 import Certificates from "./sections/Certificates";
 import Footer from "./sections/Footer";
 import DownloadResume from "./components/DownloadResume";
+import Contact from "./sections/Contact";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -33,6 +34,9 @@ const App = () => {
       </section>
       <section className="padding-x py-5">
         <Certificates />
+      </section>
+      <section className="padding-x py-5">
+        <Contact />
       </section>
       <section className="padding-x py-5 bg-black">
         <Footer />
