@@ -10,6 +10,7 @@ import {
   GDclub,
   chatapp,
   buszz,
+  reactjscertificate,
 } from "../assets";
 
 export const navLinks = [
@@ -20,7 +21,7 @@ export const navLinks = [
   { href: "#certificates", label: "Certificates" },
 ];
 
-export const imgUrls = [microsoft, devtown, GDclub];
+export const imgUrls = [reactjscertificate, microsoft, devtown, GDclub];
 
 export const skills = [
   {

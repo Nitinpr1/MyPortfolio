@@ -18,6 +18,7 @@ import nplogo from "./nplogo.png";
 import file from "./file.png";
 import chatapp from "./chatapp.png";
 import buszz from "./buszz.png";
+import reactjscertificate from "./reactjscertificate.png";
 
 export {
   instagram,
@@ -40,4 +41,5 @@ export {
   file,
   chatapp,
   buszz,
+  reactjscertificate,
 };
