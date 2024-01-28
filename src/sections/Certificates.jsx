@@ -7,7 +7,7 @@ const Certificates = () => {
       id="certificates"
       className="max-container justify-center items-center flex flex-col"
     >
-      <h2 className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10">
+      <h2 className="text-red-500 font-palanquin text-center sm:text-4xl text-[40px] font-bold mb-10">
         Certificates
       </h2>
 

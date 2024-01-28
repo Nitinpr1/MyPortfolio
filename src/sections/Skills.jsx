@@ -12,7 +12,7 @@ const Skills = () => {
         data-aos-duration="1000"
         className="md:w-3/4 xl:w-2/4 w-full"
       >
-        <h1 className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10">
+        <h1 className="text-red-500 font-palanquin text-center sm:text-4xl text-[40px] font-bold mb-10">
           SKILLS
         </h1>
         <div>

@@ -48,11 +48,11 @@ const Home = () => {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="font-montserrat text-slate-gray text-lg leading-8 mt-1 sm:max-w-sm p-2"
+          className="font-montserrat text-coral-red text-lg leading-8 mt-1 sm:max-w-sm p-2"
         >
           Full Stack Web Developer
         </p>
-        <br />
+
         <p
           data-aos="fade-up"
           data-aos-duration="1000"

@@ -9,7 +9,7 @@ const Projects = () => {
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
-          className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10"
+          className="text-red-500 font-palanquin text-center sm:text-4xl text-[40px] font-bold mb-10"
         >
           My Projects
         </h1>

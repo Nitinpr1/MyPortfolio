@@ -29,7 +29,7 @@ const App = () => {
       <section className="padding-x py-10 p-b">
         <Projects />
       </section>
-      <section className="padding">
+      <section className="padding-e">
         <Education />
       </section>
       <section className="padding-x py-5">

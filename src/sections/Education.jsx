@@ -4,7 +4,7 @@ import { education } from "../constants";
 const Education = () => {
   return (
     <section id="education" className="max-container">
-      <h2 className="text-red-500 font-palanquin text-center text-4xl font-bold mb-10">
+      <h2 className="text-red-500 font-palanquin text-center sm:text-4xl text-[40px] font-bold mb-10">
         Education
       </h2>
       <div className=" ">
