@@ -9,8 +9,8 @@ import {
   devtown,
   GDclub,
   chatapp,
-  buszz,
   reactjscertificate,
+  resumexpress,
 } from "../assets";
 
 export const navLinks = [
@@ -34,11 +34,11 @@ export const skills = [
   },
   {
     name: "JavaScript",
-    value: "70%",
+    value: "80%",
   },
   {
     name: "React JS",
-    value: "60%",
+    value: "75%",
   },
   {
     name: "ASP.NET",
@@ -50,31 +50,31 @@ export const skills = [
   },
   {
     name: "Bootstrap",
-    value: "90%",
+    value: "85%",
   },
   {
     name: "Tailwind CSS",
-    value: "70%",
+    value: "80%",
   },
   {
     name: "Material UI",
-    value: "60%",
+    value: "75%",
   },
   {
     name: "C#",
     value: "80%",
   },
-  {
-    name: "C++",
-    value: "50%",
-  },
-  {
-    name: "Core Java",
-    value: "60%",
-  },
 ];
 
 export const projects = [
+  {
+    imgURL: resumexpress,
+    name: "ResumeXpress",
+    comment:
+      "A resume builder app using React, redux-toolkit, MUI, react-hook-form and jsPDF.",
+    livelink: "https://resume-xpress.vercel.app/",
+    githublink: "https://github.com/Nitinpr1/ResumeXpress",
+  },
   {
     imgURL: chatapp,
     name: "Chat App",
@@ -127,14 +127,6 @@ export const projects = [
     comment: "Sushi Shop using HTML, CSS and JavaScript",
     livelink: "https://sushishop1.netlify.app/",
     githublink: "https://github.com/Nitinpr1/Sushi_shop",
-  },
-  {
-    imgURL: buszz,
-    name: "Buszz",
-    comment:
-      "Buszz- bus booking landing page using HTML, CSS and Animate on scroll (AOS).",
-    livelink: "https://nitinpr1.github.io/buszz/",
-    githublink: "https://github.com/Nitinpr1/buszz",
   },
 ];
 
