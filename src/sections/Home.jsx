@@ -58,11 +58,12 @@ const Home = () => {
           data-aos-duration="1000"
           className="font-montserrat text-slate-gray text-lg  mb-5 w-full text-justify p-2"
         >
-          I am a passionate Full Stack Web Developer with expertise in Dotnet
-          Framework. From crafting engaging user interfaces to building robust
-          backends, I enjoy bringing ideas to life in the digital world. With a
-          blend of creativity and problem-solving skills, I strive to deliver
-          exceptional web experiences.
+          I am a passionate Full Stack Web Developer with expertise in{" "}
+          <b>MERN stack</b> and the <b>.NET Framework</b>. From crafting
+          engaging user interfaces to building robust backends and RESTful APIs,
+          I enjoy bringing ideas to life in the digital world. With a blend of
+          creativity and problem-solving skills, I strive to deliver exceptional
+          web experiences.
         </p>
 
         <div

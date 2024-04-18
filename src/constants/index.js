@@ -41,8 +41,21 @@ export const skills = [
     value: "75%",
   },
   {
+    name: "Node JS",
+    value: "50%",
+  },
+  {
+    name: "Express JS",
+    value: "50%",
+  },
+
+  {
     name: "ASP.NET",
-    value: "80%",
+    value: "70%",
+  },
+  {
+    name: "Mongo DB",
+    value: "50%",
   },
   {
     name: "SQL Server",
