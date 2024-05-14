@@ -20,6 +20,7 @@ import chatapp from "./chatapp.png";
 import buszz from "./buszz.png";
 import reactjscertificate from "./reactjscertificate.png";
 import resumexpress from "./resumexpress.png";
+import getYTSubs from "./getYTSubs.png";
 
 export {
   instagram,
@@ -44,4 +45,5 @@ export {
   buszz,
   reactjscertificate,
   resumexpress,
+  getYTSubs,
 };

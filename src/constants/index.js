@@ -11,6 +11,7 @@ import {
   chatapp,
   reactjscertificate,
   resumexpress,
+  getYTSubs,
 } from "../assets";
 
 export const navLinks = [
@@ -80,6 +81,14 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    imgURL: getYTSubs,
+    name: "Get Youtube Subs",
+    comment:
+      "An API for getting Youtube Subs data using Node.js, Express.js and mongoDB.",
+    livelink: "https://youtu.be/ir_7Zs15dNE?si=C0rlgqFDLMBAhSGB",
+    githublink: "https://github.com/Nitinpr1/get-youtube-subscribers-",
+  },
   {
     imgURL: resumexpress,
     name: "ResumeXpress",

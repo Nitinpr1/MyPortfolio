@@ -5,12 +5,19 @@ const ProjectCard = ({ imgURL, name, comment, livelink, githublink }) => {
     <div
       data-aos="zoom-out-up"
       data-aos-duration="1000"
-      className="bg-white rounded-lg shadow-lg drop-shadow-2xl hover:bg-slate-200 hover:scale-105 duration-500 dark:bg-slate-900 max-h-[400px] max-w-[400px]"
+      className="bg-white rounded-lg shadow-lg drop-shadow-2xl hover:bg-slate-200 duration-500 dark:bg-slate-900 max-h-[400px] max-w-[400px]"
     >
       <div className="flex flex-1 flex-col w-full max-sm:w-full cursor-pointer">
-        <img src={imgURL} alt={name} className="w-full h-full" />
+        <div className="overflow-hidden">
+          <img
+            src={imgURL}
+            alt={name}
+            className="w-full h-full hover:scale-105 duration-500"
+          />
+        </div>
+
         <div className="p-4 max-h-[120px] overflow-hidden">
-          <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin px-2">
+          <h3 className=" text-2xl leading-normal font-semibold font-palanquin px-2">
             {name}
           </h3>
           <p className="text-gray-600 font-palanquin text-base px-2 mt-2">
