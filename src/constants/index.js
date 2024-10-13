@@ -12,17 +12,25 @@ import {
   reactjscertificate,
   resumexpress,
   getYTSubs,
+  nodejsCertificate,
 } from "../assets";
 
 export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#skills", label: "Skills" },
+  { href: "#exp", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#education", label: "Education" },
   { href: "#certificates", label: "Certificates" },
 ];
 
-export const imgUrls = [reactjscertificate, microsoft, devtown, GDclub];
+export const imgUrls = [
+  nodejsCertificate,
+  reactjscertificate,
+  microsoft,
+  devtown,
+  GDclub,
+];
 
 export const skills = [
   {
@@ -43,20 +51,20 @@ export const skills = [
   },
   {
     name: "Node JS",
-    value: "50%",
-  },
-  {
-    name: "Express JS",
-    value: "50%",
-  },
-
-  {
-    name: "ASP.NET",
     value: "70%",
   },
   {
+    name: "Express JS",
+    value: "70%",
+  },
+
+  // {
+  //   name: "ASP.NET",
+  //   value: "70%",
+  // },
+  {
     name: "Mongo DB",
-    value: "50%",
+    value: "60%",
   },
   {
     name: "SQL Server",
@@ -64,7 +72,7 @@ export const skills = [
   },
   {
     name: "Bootstrap",
-    value: "85%",
+    value: "75%",
   },
   {
     name: "Tailwind CSS",
@@ -74,10 +82,10 @@ export const skills = [
     name: "Material UI",
     value: "75%",
   },
-  {
-    name: "C#",
-    value: "80%",
-  },
+  // {
+  //   name: "C#",
+  //   value: "80%",
+  // },
 ];
 
 export const projects = [
@@ -168,4 +176,15 @@ export const education = [
   //   comment: "higher secondary education",
   //   time: "2018-2020",
   // },
+];
+export const experience = [
+  {
+    name: "Backend Developer - Intern ",
+    company: "TalentCo HR Services",
+    city: "Mulund, Maharashtra",
+    comment:
+      "As a Backend Developer Intern at TalentCo, I focused on building RESTful APIs using Node.js and Express.js. I managed MySQL databases to ensure efficient data storage and retrieval, contributing to seamless application performance and user experience. This role enhanced my skills in backend development and reinforced my understanding of database management and API integration.",
+    startTime: "Jun-2024",
+    endTime: "Present",
+  },
 ];

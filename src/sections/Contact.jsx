@@ -1,16 +1,8 @@
-import { useState } from "react";
-import ContactMe from "../components/ContactMe";
+// import { useState } from "react";
+// import ContactMe from "../components/ContactMe";
 
-const Contact = () => {
-  const [isFormOpen, setIsFormOpen] = useState(false);
-
-  const openForm = () => {
-    setIsFormOpen(true);
-  };
-
-  const closeForm = () => {
-    setIsFormOpen(false);
-  };
+// eslint-disable-next-line react/prop-types
+const Contact = ({ openForm }) => {
   return (
     <div
       data-aos="fade-right"
@@ -26,7 +18,7 @@ const Contact = () => {
       >
         Contact Me
       </button>
-      {isFormOpen && <ContactMe onClose={closeForm} onBack={closeForm} />}
+      {/* {isFormOpen && <ContactMe onClose={closeForm} onBack={closeForm} />} */}
     </div>
   );
 };

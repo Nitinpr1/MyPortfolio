@@ -21,6 +21,8 @@ import buszz from "./buszz.png";
 import reactjscertificate from "./reactjscertificate.png";
 import resumexpress from "./resumexpress.png";
 import getYTSubs from "./getYTSubs.png";
+import WorkExperience from "./workExperience.png";
+import nodejsCertificate from "./nodejsCeritificate.png";
 
 export {
   instagram,
@@ -46,4 +48,6 @@ export {
   reactjscertificate,
   resumexpress,
   getYTSubs,
+  WorkExperience,
+  nodejsCertificate,
 };

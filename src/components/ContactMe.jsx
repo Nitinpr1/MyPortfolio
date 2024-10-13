@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 
 import toast, { Toaster } from "react-hot-toast";
 
+// eslint-disable-next-line react/prop-types
 const ContactMe = ({ onClose }) => {
   const form = useRef();
 

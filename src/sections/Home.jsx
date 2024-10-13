@@ -3,19 +3,20 @@ import { instagram } from "../assets/index";
 import { link } from "../assets/index";
 import { twitter } from "../assets/index";
 import { nitinnew } from "../assets/index";
-import ContactMe from "../components/ContactMe";
-import { useState } from "react";
+// import ContactMe from "../components/ContactMe";
+// import { useState } from "react";
 
-const Home = () => {
-  const [isFormOpen, setIsFormOpen] = useState(false);
+// eslint-disable-next-line react/prop-types
+const Home = ({ openForm }) => {
+  // const [isFormOpen, setIsFormOpen] = useState(false);
 
-  const openForm = () => {
-    setIsFormOpen(true);
-  };
+  // const openForm = () => {
+  //   setIsFormOpen(true);
+  // };
 
-  const closeForm = () => {
-    setIsFormOpen(false);
-  };
+  // const closeForm = () => {
+  //   setIsFormOpen(false);
+  // };
 
   return (
     <section
@@ -59,11 +60,10 @@ const Home = () => {
           className="font-montserrat text-slate-gray text-lg  mb-5 w-full text-justify p-2"
         >
           I am a passionate Full Stack Web Developer with expertise in{" "}
-          <b>MERN stack</b> and the <b>.NET Framework</b>. From crafting
-          engaging user interfaces to building robust backends and RESTful APIs,
-          I enjoy bringing ideas to life in the digital world. With a blend of
-          creativity and problem-solving skills, I strive to deliver exceptional
-          web experiences.
+          <b>MERN stack</b>. From crafting engaging user interfaces to building
+          robust backends and RESTful APIs, I enjoy bringing ideas to life in
+          the digital world. With a blend of creativity and problem-solving
+          skills, I strive to deliver exceptional web experiences.
         </p>
 
         <div
@@ -98,7 +98,7 @@ const Home = () => {
             Contact Me
           </button>
 
-          {isFormOpen && <ContactMe onClose={closeForm} onBack={closeForm} />}
+          {/* {isFormOpen && <ContactMe onClose={closeForm} onBack={closeForm} />} */}
 
           <a
             data-aos="fade-up"
