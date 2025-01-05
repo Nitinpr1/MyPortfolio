@@ -179,12 +179,21 @@ export const education = [
 ];
 export const experience = [
   {
+    name: "Software Developer",
+    company: "TalentCo HR Services",
+    city: "Mulund, Maharashtra",
+    comment:
+      "As a Backend Developer at TalentCo HR Services, I focus on designing and implementing RESTful APIs using Node.js and Express.js. I manage MySQL databases to ensure efficient data organization and retrieval, contributing to robust and scalable backend systems. This role has strengthened my expertise in backend development, database management, and API design while delivering impactful solutions for business needs.",
+    startTime: "Dec-2024",
+    endTime: "Present",
+  },
+  {
     name: "Backend Developer - Intern ",
     company: "TalentCo HR Services",
     city: "Mulund, Maharashtra",
     comment:
       "As a Backend Developer Intern at TalentCo, I focused on building RESTful APIs using Node.js and Express.js. I managed MySQL databases to ensure efficient data storage and retrieval, contributing to seamless application performance and user experience. This role enhanced my skills in backend development and reinforced my understanding of database management and API integration.",
     startTime: "Jun-2024",
-    endTime: "Present",
+    endTime: "Nov-2024",
   },
 ];
