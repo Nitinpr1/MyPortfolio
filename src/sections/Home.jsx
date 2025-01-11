@@ -34,7 +34,7 @@ const Home = ({ openForm }) => {
           <img
             src={nitinnew}
             alt="Nitin Prajapati"
-            className="w-[85px] h-[85px] rounded-full object-cover border"
+            className="w-[85px] h-[85px] rounded-full object-cover"
           />
         </div>
       </div>
