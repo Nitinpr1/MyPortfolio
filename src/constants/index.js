@@ -13,6 +13,7 @@ import {
   resumexpress,
   getYTSubs,
   nodejsCertificate,
+  flex
 } from "../assets";
 
 export const navLinks = [
@@ -80,6 +81,14 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    imgURL: flex,
+    name: "Vibe-flow",
+    comment:
+      "Full Stack entertainment app with auth, search, bookmark features built using MERN Stack.",
+    livelink: "https://vibe-flow-eight.vercel.app/",
+    githublink: "https://github.com/Nitinpr1/entertainment_app",
+  },
   {
     imgURL: getYTSubs,
     name: "Get Youtube Subs",

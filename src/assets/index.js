@@ -24,6 +24,7 @@ import resumexpress from "./resumexpress.png";
 import getYTSubs from "./getYTSubs.png";
 import WorkExperience from "./workExperience.png";
 import nodejsCertificate from "./nodejsCeritificate.png";
+import flex from "./flex.png";
 
 export {
   instagram,
@@ -51,4 +52,5 @@ export {
   getYTSubs,
   WorkExperience,
   nodejsCertificate,
+  flex
 };

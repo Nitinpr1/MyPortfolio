@@ -45,7 +45,7 @@ const App = () => {
       <section className="padding-e">
         <Experience />
       </section>
-      <section className="padding-x py-10 p-b">
+      <section className="padding-e py-10 p-b">
         <Projects />
       </section>
 
