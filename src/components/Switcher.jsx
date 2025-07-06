@@ -15,7 +15,7 @@ const Switcher = () => {
 
   return (
     <div className="bg-slate-300 p-1 rounded-full">
-      <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={30} />
+      <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={20} />
     </div>
   );
 };

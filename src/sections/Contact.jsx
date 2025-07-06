@@ -14,7 +14,7 @@ const Contact = ({ openForm }) => {
       </h3>
       <button
         onClick={openForm}
-        className="bg-coral-red p-4 text-white text-lg rounded-full w-60 shadow-lg hover:shadow-red-900"
+        className="bg-gradient-to-r from-coral-red to-red-500 hover:from-red-500 hover:to-red-500 p-4 text-white text-lg rounded-full w-60 shadow-lg hover:shadow-red-900"
       >
         Contact Me
       </button>

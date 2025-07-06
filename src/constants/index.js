@@ -34,20 +34,8 @@ export const imgUrls = [
 
 export const skills = [
   {
-    name: "HTML",
-    value: "90%",
-  },
-  {
-    name: "CSS",
-    value: "80%",
-  },
-  {
     name: "JavaScript",
     value: "80%",
-  },
-  {
-    name: "React JS",
-    value: "75%",
   },
   {
     name: "Node JS",
@@ -57,11 +45,10 @@ export const skills = [
     name: "Express JS",
     value: "70%",
   },
-
-  // {
-  //   name: "ASP.NET",
-  //   value: "70%",
-  // },
+  {
+    name: "React JS",
+    value: "75%",
+  },
   {
     name: "Mongo DB",
     value: "60%",
@@ -69,6 +56,14 @@ export const skills = [
   {
     name: "SQL Server",
     value: "70%",
+  },
+  {
+    name: "HTML",
+    value: "90%",
+  },
+  {
+    name: "CSS",
+    value: "80%",
   },
   {
     name: "Bootstrap",
@@ -82,10 +77,6 @@ export const skills = [
     name: "Material UI",
     value: "75%",
   },
-  // {
-  //   name: "C#",
-  //   value: "80%",
-  // },
 ];
 
 export const projects = [
@@ -183,17 +174,16 @@ export const experience = [
     company: "TalentCo HR Services",
     city: "Mulund, Maharashtra",
     comment:
-      "As a Backend Developer at TalentCo HR Services, I focus on designing and implementing RESTful APIs using Node.js and Express.js. I manage MySQL databases to ensure efficient data organization and retrieval, contributing to robust and scalable backend systems. This role has strengthened my expertise in backend development, database management, and API design while delivering impactful solutions for business needs.",
-    startTime: "Dec-2024",
+      "Working on full-stack development with RESTful APIs using Node.js and Express.js, MySQL for data management, and React.js for frontend features. Also responsible for deployment and ongoing maintenance of core projects like the HRMS and ATS applications.",
+    startTime: "June-2024",
     endTime: "Present",
-  },
-  {
-    name: "Backend Developer - Intern ",
-    company: "TalentCo HR Services",
-    city: "Mulund, Maharashtra",
-    comment:
-      "As a Backend Developer Intern at TalentCo, I focused on building RESTful APIs using Node.js and Express.js. I managed MySQL databases to ensure efficient data storage and retrieval, contributing to seamless application performance and user experience. This role enhanced my skills in backend development and reinforced my understanding of database management and API integration.",
-    startTime: "Jun-2024",
-    endTime: "Nov-2024",
-  },
+    technologies: ["Node.js", "Express.js", "React.js", "MySQL", "Git", "Postman"],
+    highlights: [
+      "Developed scalable APIs for core modules",
+      "Deployed and maintained HRMS and ATS applications",
+      "Optimized SQL queries and improved backend response time",
+      "Worked closely with frontend team on user interface improvements"
+    ]
+  }
 ];
+

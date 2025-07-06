@@ -1,47 +1,55 @@
 import { linkto, github } from "../assets";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ imgURL, name, comment, livelink, githublink }) => {
   return (
     <div
-      data-aos="zoom-out-up"
+      data-aos="zoom-in-up"
       data-aos-duration="1000"
-      className="bg-white rounded-lg shadow-lg drop-shadow-2xl hover:bg-slate-200 duration-500 dark:bg-slate-900 max-h-[400px] max-w-[400px]"
+      className="bg-white dark:bg-slate-900 rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl max-w-[400px] group"
     >
-      <div className="flex flex-1 flex-col w-full max-sm:w-full cursor-pointer">
-        <div className="overflow-hidden">
-          <img
-            src={imgURL}
-            alt={name}
-            className="w-full h-full hover:scale-105 duration-500"
-          />
-        </div>
+      {/* Image Section with Overlay */}
+      <div className="relative w-full h-56 overflow-hidden">
+        <img
+          src={imgURL}
+          alt={name}
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
 
-        <div className="p-4 max-h-[120px] overflow-hidden">
-          <h3 className=" text-2xl leading-normal font-semibold font-palanquin px-2">
-            {name}
-          </h3>
-          <p className="text-gray-600 font-palanquin text-base px-2 mt-2">
-            {comment}
-          </p>
-        </div>
-        <hr />
-        <div className="flex justify-center items-center gap-10 lg:p-4 p-3 max-h-[80px]">
-          <a
-            href={livelink}
-            className="bg-coral-red shadow-lg hover:shadow-red-900 p-2 text-white-400 w-full rounded-full flex justify-center items-center gap-2 font-bold"
-          >
-            live <img src={linkto} width={20} alt="link" />
-          </a>
-          <a
-            href={githublink}
-            className="bg-coral-red  shadow-lg hover:shadow-red-900 p-2 text-white-400 w-full rounded-full flex justify-center items-center gap-2 font-bold"
-          >
-            github <img src={github} width={20} alt="github" />
-          </a>
-        </div>
+      {/* Content Section */}
+      <div className="p-5">
+        <h3 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-white mb-2">
+          {name}
+        </h3>
+        <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          {comment}
+        </p>
+      </div>
+
+      {/* Buttons */}
+      <div className="flex justify-between items-center gap-4 px-5 pb-5">
+        <a
+          href={livelink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-coral-red to-red-500 text-white font-semibold shadow-md hover:from-red-500 hover:to-red-500 transition-all duration-300 w-full"
+        >
+          Live <FaExternalLinkAlt size={16} />
+        </a>
+        <a
+          href={githublink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-800 to-gray-600 text-white font-semibold shadow-md hover:from-black hover:to-gray-700 transition-all duration-300 w-full"
+        >
+          GitHub <FaGithub size={18} />
+        </a>
       </div>
     </div>
   );
 };
+
 
 export default ProjectCard;

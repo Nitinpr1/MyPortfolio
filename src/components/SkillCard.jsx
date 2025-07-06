@@ -3,15 +3,18 @@ const SkillCard = ({ name, value }) => {
     <div
       data-aos="zoom-in-up"
       data-aos-duration="1000"
-      className="w-full h-auto flex flex-col"
+      className="w-full max-w-xl mx-auto my-3"
     >
-      <div className="flex gap-5 p-2">
-        <div className="w-[180px] bg-gray-200 dark:bg-slate-900 rounded-full p-1">
-          <h1 className="text-coral-red font-bold text-center">{name}</h1>
+      <div className="flex items-center gap-4">
+        
+        <div className="min-w-[120px] px-2 py-1 rounded-full bg-gray-200 dark:bg-slate-800 text-gray-800 dark:text-slate-300 text-xs md:text-base text-center shadow-sm">
+          {name}
         </div>
-        <div className="w-full h-6 bg-gray-200 dark:bg-slate-900 rounded-full mt-1">
+
+        {/* Progress Bar */}
+        <div className="w-full bg-gray-200 dark:bg-slate-800 rounded-full h-5 overflow-hidden relative">
           <div
-            className="bg-coral-red p-1 text-blue-100 text-center h-full leading-none rounded-full"
+            className="h-full bg-gradient-to-r from-coral-red to-red-500 text-white text-xs flex items-center justify-end px-2 rounded-full transition-all duration-700 ease-in-out"
             style={{ width: value }}
           >
             {value}

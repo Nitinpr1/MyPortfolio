@@ -97,7 +97,7 @@ const ContactMe = ({ onClose }) => {
           <div className="flex gap-4 justify-center items-center mt-3">
             <button
               type="submit"
-              className="bg-coral-red text-gray-200 px-4 py-2 rounded-full w-40 shadow-lg"
+              className="bg-gradient-to-r from-coral-red to-red-500 hover:from-red-500 hover:to-red-500 text-gray-200 px-4 py-2 rounded-full w-40 shadow-lg"
             >
               Send
             </button>
