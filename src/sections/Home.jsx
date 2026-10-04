@@ -118,7 +118,7 @@ const Home = ({ openForm }) => {
   return (
     <section
       id="home"
-      className="w-full max-container min-h-screen flex items-center px-4 sm:px-5 pt-28 pb-16 md:pt-[100px] overflow-x-hidden"
+      className="w-full max-container min-h-screen flex items-center px-4 sm:px-5 pt-20 pb-16 md:pt-[100px] overflow-x-hidden"
     >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 items-center">
         {/* LEFT: text */}
