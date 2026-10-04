@@ -9,6 +9,7 @@ import Footer from "./sections/Footer";
 import DownloadResume from "./components/DownloadResume";
 import Contact from "./sections/Contact";
 import ContactMe from "./components/ContactMe";
+import NetworkBackground from "./components/NetworkBackground";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,6 +32,8 @@ const App = () => {
 
   return (
     <main className="relative bg-white  dark:bg-slate-800 dark:text-white bg-gradient-to-r from-orange-200 dark:from-slate-900">
+       <NetworkBackground />
+       <div className="relative z-10">
       <Nav />
       <section className="xl:padding-l wide:padding-r ">
         <Home
@@ -62,11 +65,12 @@ const App = () => {
           closeForm={closeForm}
         />
       </section>
-      <section className="padding-x py-5 bg-black">
+      <section className="padding-x py-3 bg-black dark:bg-slate-900/80 dark:backdrop-blur-sm border-t border-transparent dark:border-slate-700/60">
         <Footer />
       </section>
       <DownloadResume />
       {isFormOpen && <ContactMe onClose={closeForm} onBack={closeForm} />}
+      </div>
     </main>
   );
 };

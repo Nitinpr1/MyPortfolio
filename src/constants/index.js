@@ -47,6 +47,14 @@ export const skills = [
     value: "70%",
   },
   {
+    name: "RESTful API",
+    value: "90%",
+  },
+  {
+    name: "JWT Authentication",
+    value: "90%",
+  },
+  {
     name: "React JS",
     value: "75%",
   },
@@ -59,12 +67,8 @@ export const skills = [
     value: "70%",
   },
   {
-    name: "HTML",
+    name: "HTML & CSS",
     value: "90%",
-  },
-  {
-    name: "CSS",
-    value: "80%",
   },
   {
     name: "Bootstrap",
@@ -77,6 +81,18 @@ export const skills = [
   {
     name: "Material UI",
     value: "75%",
+  },
+  {
+    name: " GitHub & Hostinger",
+    value: "65%",
+  },
+  {
+    name: " DigitalOcean & PM2",
+    value: "65%",
+  },
+  {
+    name: "Database Design",
+    value: "65%",
   },
 ];
 

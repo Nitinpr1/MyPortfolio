@@ -2,35 +2,30 @@ import { github } from "../assets/index";
 import { instagram } from "../assets/index";
 import { link } from "../assets/index";
 import { twitter } from "../assets/index";
-import { nitinnew } from "../assets/index";
-// import ContactMe from "../components/ContactMe";
-// import { useState } from "react";
 
-// eslint-disable-next-line react/prop-types
+const stack = ["MongoDB", "Express", "React", "Node.js", "SQL"];
+
+const socials = [
+  { href: "https://www.linkedin.com/in/nitin-prajapati1/", src: link, alt: "LinkedIn" },
+  { href: "https://github.com/Nitinpr1", src: github, alt: "GitHub" },
+  { href: "https://www.instagram.com/nitin_prajapati15/", src: instagram, alt: "Instagram" },
+  { href: "https://twitter.com/NitinPr_01", src: twitter, alt: "X (Twitter)" },
+];
+
+// old code
 // const Home = ({ openForm }) => {
-//   // const [isFormOpen, setIsFormOpen] = useState(false);
-
-//   // const openForm = () => {
-//   //   setIsFormOpen(true);
-//   // };
-
-//   // const closeForm = () => {
-//   //   setIsFormOpen(false);
-//   // };
-
 //   return (
 //     <section
 //       id="home"
-//       className="w-full flex flex-col justify-center items-center max-container"
+//       className="w-full flex flex-col justify-center items-center max-container md:pt-[100px]"
 //     >
+//       {/* Avatar */}
 //       <div
 //         data-aos="zoom-out-up"
 //         data-aos-duration="1000"
-//         className="flex justify-center items-center mt-[150px] relative"
+//         className="relative mb-6"
 //       >
-//         {/* Background circle */}
-//         <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[95px] h-[95px] rounded-full border-2 border-gray-300 dark:border-red-300 flex justify-center items-center">
-//           {/* Image inside */}
+//         <div className="bg-gradient-to-r from-orange-300 to-coral-red w-[95px] h-[95px] rounded-full border-2 border-gray-300 dark:border-red-300 flex items-center justify-center">
 //           <img
 //             src={nitinnew}
 //             alt="Nitin Prajapati"
@@ -39,302 +34,248 @@ import { nitinnew } from "../assets/index";
 //         </div>
 //       </div>
 
-//       <div className="relative xl:w-10/12 flex flex-col  justify-center items-center w-full max-xl:padding-x xl:mt-5">
-//         <h1
-//           data-aos="fade-right"
-//           data-aos-duration="1000"
-//           className="md:mt-0 font-palanquin text-[40px] md:text-4xl font-bold"
-//         >
-//           <span className="pr-3 text-coral-red">Nitin</span>
-//           <span>Prajapati </span>
-//         </h1>
-//         <p
-//           data-aos="fade-up"
-//           data-aos-duration="1000"
-//           className="font-montserrat text-coral-red text-lg leading-8 sm:max-w-sm p-2"
-//         >
-//           {"< Full Stack Web Developer />"}
-//         </p>
-
-//         <p
-//           data-aos="fade-up"
-//           data-aos-duration="1000"
-//           className="font-montserrat text-slate-700 dark:text-slate-400 text-lg  mb-5 md:w-10/12 w-full text-justify p-2"
-//         >
-//           I am a passionate Full Stack Web Developer with expertise in{" "}
-//           <b>MERN stack</b>. From crafting engaging user interfaces to building
-//           robust backends and RESTful APIs, I enjoy bringing ideas to life in
-//           the digital world. With a blend of creativity and problem-solving
-//           skills, I strive to deliver exceptional web experiences.
-//         </p>
-
-//         <div
-//           data-aos="fade-right"
-//           data-aos-duration="1000"
-//           className="flex flex-row justify-center items-center mt-1 gap-10 w-full"
-//         >
-//           <a
-//             href="https://www.linkedin.com/in/nitin-prajapati1/"
-//             target="blank"
-//           >
-//             <img src={link} alt="linkedin" width={53} />
-//           </a>
-
-//           <a href="https://github.com/Nitinpr1" target="blank">
-//             <img src={github} alt="github" width={40} />
-//           </a>
-//           <a href="https://www.instagram.com/nitin_prajapati15/" target="blank">
-//             <img src={instagram} alt="Instagram" width={40} />
-//           </a>
-//           <a href="https://twitter.com/NitinPr_01" target="blank">
-//             <img src={twitter} alt="twitter" width={40} />
-//           </a>
-//         </div>
-//         <div className="flex flex-row flex-wrap justify-center items-center mt-8 gap-4 w-full">
-//           <button
-//             data-aos="fade-up"
-//             data-aos-duration="1000"
-//             onClick={openForm}
-//             className="bg-coral-red p-3 text-white text-lg rounded-full w-60 shadow-lg hover:shadow-red-900"
-//           >
-//             Contact Me
-//           </button>
-
-//           {/* {isFormOpen && <ContactMe onClose={closeForm} onBack={closeForm} />} */}
-
-//           <a
-//             data-aos="fade-up"
-//             data-aos-duration="1000"
-//             href="#projects"
-//             className="bg-white text-center border-2 text-red-500 p-3 text-lg rounded-full w-60 shadow-lg hover:shadow-red-500"
-//           >
-//             View Projects
-//           </a>
-//         </div>
-//       </div>
-//       {/* <div
-//         data-aos="zoom-out-up"
+//       {/* Title */}
+//       <h1
+//         data-aos="fade-right"
 //         data-aos-duration="1000"
-//         className="flex-1 md:flex justify-center items-center xl:min-h-screen rounded-xl mt-10 hidden md:mt-40 xl:mt-10"
+//         className="text-3xl md:text-5xl font-bold font-palanquin text-center"
 //       >
-//         <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[260px] md:w-[280px] h-[300px] md:h-[310px] rounded-2xl rotate-12 border-2"></div>
-//         <img
-//           src={nitinnew}
-//           alt="Nitin Prajapati"
-//           width={280}
-//           height={270}
-//           className="object-contain absolute rounded-3xl shadow-3xl border-2 hover:rotate-6 duration-500"
-//         />
-//       </div> */}
+//         <span className="text-coral-red pr-2">Nitin</span>
+//         Prajapati
+//       </h1>
+
+//       {/* Role Tagline */}
+//       <p
+//         data-aos="fade-up"
+//         data-aos-duration="1000"
+//         className="text-lg text-coral-red font-montserrat mt-2 mb-4"
+//       >
+//         {"< Full Stack Web Developer />"}
+//       </p>
+
+//       {/* Intro Description */}
+//       <p
+//         data-aos="fade-up"
+//         data-aos-duration="1000"
+//         className="text-base md:text-lg font-montserrat text-slate-700 dark:text-slate-400 text-center md:w-3/4 lg:w-2/3 mb-6 px-4 leading-relaxed"
+//       >
+//         I am a passionate Full Stack Web Developer with expertise in{" "}
+//         <b>MERN stack</b>. From crafting engaging user interfaces to building
+//         robust backends and RESTful APIs, I enjoy bringing ideas to life in the
+//         digital world. With creativity and problem-solving skills, I strive to
+//         deliver exceptional web experiences.
+//       </p>
+
+//       {/* Social Links */}
+//       <div
+//         data-aos="fade-right"
+//         data-aos-duration="1000"
+//         className="flex justify-center items-center gap-6 mb-8"
+//       >
+//         <a href="https://www.linkedin.com/in/nitin-prajapati1/" target="_blank" rel="noreferrer">
+//           <img src={link} alt="LinkedIn" width={50} />
+//         </a>
+//         <a href="https://github.com/Nitinpr1" target="_blank" rel="noreferrer">
+//           <img src={github} alt="GitHub" width={40} />
+//         </a>
+//         <a
+//           href="https://www.instagram.com/nitin_prajapati15/"
+//           target="_blank"
+//           rel="noreferrer"
+//         >
+//           <img src={instagram} alt="Instagram" width={40} />
+//         </a>
+//         <a href="https://twitter.com/NitinPr_01" target="_blank" rel="noreferrer">
+//           <img src={twitter} alt="Twitter" width={40} />
+//         </a>
+//       </div>
+
+//       {/* Buttons */}
+//       <div className="flex flex-wrap p-2 md:p-1 md:flex-nowrap justify-center items-center gap-4 w-full max-w-[500px]">
+//         <button
+//           data-aos="fade-up"
+//           data-aos-duration="1000"
+//           onClick={openForm}
+//           className="bg-gradient-to-r from-coral-red to-red-500 hover:from-red-500 hover:to-red-500 text-white text-lg py-3 px-6 rounded-full w-full shadow-md transition-all duration-300"
+//         >
+//           Contact Me
+//         </button>
+//         <a
+//           data-aos="fade-up"
+//           data-aos-duration="1000"
+//           href="#projects"
+//           className="border-2 border-coral-red text-coral-red text-lg py-3 px-6 rounded-full w-full text-center hover:bg-coral-red hover:text-white transition-all duration-300 shadow-md"
+//         >
+//           View Projects
+//         </a>
+//       </div>
 //     </section>
-//     // <section
-//     //   id="home"
-//     //   className="w-full flex xl:flex-row flex-col justify-center items-center max-container gap-10 md:flex-col-reverse"
-//     // >
-//     //   <div
-//     //     data-aos="zoom-out-up"
-//     //     data-aos-duration="1000"
-//     //     className="flex justify-center items-center xl:min-h-screen rounded-xl mt-[140px] md:hidden"
-//     //   >
-//     //     <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[150px]  h-[170px]  rounded-xl rotate-12 border"></div>
-//     //     <img
-//     //       src={nitinnew}
-//     //       alt="Nitin Prajapati"
-//     //       width={150}
-//     //       height={70}
-//     //       className="object-contain absolute rounded-xl shadow-3xl border hover:rotate-6 duration-500"
-//     //     />
-//     //   </div>
-//     //   <div className="relative xl:w-3/5 flex flex-col  justify-center items-start w-full  max-xl:padding-x pt-10  xl:mt-10">
-//     //     <h1
-//     //       data-aos="fade-up"
-//     //       data-aos-duration="1000"
-//     //       className="md:mt-0 font-palanquin text-[40px] md:text-8xl font-bold"
-//     //     >
-//     //       <span className="pr-3 text-coral-red">Nitin</span>
-//     //       <span>Prajapati </span>
-//     //     </h1>
-//     //     <p
-//     //       data-aos="fade-up"
-//     //       data-aos-duration="1000"
-//     //       className="font-montserrat text-coral-red text-lg leading-8 mt-1 sm:max-w-sm p-2"
-//     //     >
-//     //       Full Stack Web Developer
-//     //     </p>
-
-//     //     <p
-//     //       data-aos="fade-up"
-//     //       data-aos-duration="1000"
-//     //       className="font-montserrat text-slate-gray text-lg  mb-5 w-full text-justify p-2"
-//     //     >
-//     //       I am a passionate Full Stack Web Developer with expertise in{" "}
-//     //       <b>MERN stack</b>. From crafting engaging user interfaces to building
-//     //       robust backends and RESTful APIs, I enjoy bringing ideas to life in
-//     //       the digital world. With a blend of creativity and problem-solving
-//     //       skills, I strive to deliver exceptional web experiences.
-//     //     </p>
-
-//     //     <div
-//     //       data-aos="fade-right"
-//     //       data-aos-duration="1000"
-//     //       className="flex flex-row justify-center items-center mt-1 gap-10 w-full"
-//     //     >
-//     //       <a
-//     //         href="https://www.linkedin.com/in/nitin-prajapati1/"
-//     //         target="blank"
-//     //       >
-//     //         <img src={link} alt="linkedin" width={53} />
-//     //       </a>
-
-//     //       <a href="https://github.com/Nitinpr1" target="blank">
-//     //         <img src={github} alt="github" width={40} />
-//     //       </a>
-//     //       <a href="https://www.instagram.com/nitin_prajapati15/" target="blank">
-//     //         <img src={instagram} alt="Instagram" width={40} />
-//     //       </a>
-//     //       <a href="https://twitter.com/NitinPr_01" target="blank">
-//     //         <img src={twitter} alt="twitter" width={40} />
-//     //       </a>
-//     //     </div>
-//     //     <div className="flex flex-row flex-wrap justify-center items-center mt-10 gap-4 w-full">
-//     //       <button
-//     //         data-aos="fade-up"
-//     //         data-aos-duration="1000"
-//     //         onClick={openForm}
-//     //         className="bg-coral-red p-4 text-white text-lg rounded-full w-60 shadow-lg hover:shadow-red-900"
-//     //       >
-//     //         Contact Me
-//     //       </button>
-
-//     //       {/* {isFormOpen && <ContactMe onClose={closeForm} onBack={closeForm} />} */}
-
-//     //       <a
-//     //         data-aos="fade-up"
-//     //         data-aos-duration="1000"
-//     //         href="#projects"
-//     //         className="bg-white text-center border-2 text-red-500 p-4 text-lg rounded-full w-60 shadow-lg hover:shadow-red-500"
-//     //       >
-//     //         View Projects
-//     //       </a>
-//     //     </div>
-//     //   </div>
-//     //   <div
-//     //     data-aos="zoom-out-up"
-//     //     data-aos-duration="1000"
-//     //     className="flex-1 md:flex justify-center items-center xl:min-h-screen rounded-xl mt-10 hidden md:mt-40 xl:mt-10"
-//     //   >
-//     //     <div className="bg-coral-red bg-gradient-to-r from-orange-300 w-[260px] md:w-[280px] h-[300px] md:h-[310px] rounded-2xl rotate-12 border-2"></div>
-//     //     <img
-//     //       src={nitinnew}
-//     //       alt="Nitin Prajapati"
-//     //       width={280}
-//     //       height={270}
-//     //       className="object-contain absolute rounded-3xl shadow-3xl border-2 hover:rotate-6 duration-500"
-//     //     />
-//     //   </div>
-//     // </section>
 //   );
 // };
+
 
 const Home = ({ openForm }) => {
   return (
     <section
       id="home"
-      className="w-full flex flex-col justify-center items-center max-container md:pt-[100px]"
+      className="w-full max-container min-h-screen flex items-center px-4 sm:px-5 pt-28 pb-16 md:pt-[100px] overflow-x-hidden"
     >
-      {/* Avatar */}
-      <div
-        data-aos="zoom-out-up"
-        data-aos-duration="1000"
-        className="relative mb-6"
-      >
-        <div className="bg-gradient-to-r from-orange-300 to-coral-red w-[95px] h-[95px] rounded-full border-2 border-gray-300 dark:border-red-300 flex items-center justify-center">
-          <img
-            src={nitinnew}
-            alt="Nitin Prajapati"
-            className="w-[85px] h-[85px] rounded-full object-cover"
-          />
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 items-center">
+        {/* LEFT: text */}
+        <div
+          data-aos="fade-right"
+          data-aos-duration="900"
+          className="min-w-0 text-center lg:text-left"
+        >
+          <div className="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-700 bg-white/60 dark:bg-slate-900/60 backdrop-blur px-4 py-1.5 mb-6 font-montserrat text-sm text-slate-700 dark:text-slate-300">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="motion-safe:animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
+            </span>
+            Available for new projects
+          </div>
+
+          <h1 className="font-palanquin font-bold leading-[1.1] text-4xl sm:text-6xl xl:text-7xl tracking-tight break-words">
+            Hi, I'm Nitin Prajapati
+          </h1>
+
+          <p className="mt-4 text-xl md:text-2xl font-montserrat text-coral-red">
+            {"< Full Stack Web Developer />"}
+          </p>
+
+          <p className="mt-5 max-w-xl mx-auto lg:mx-0 text-base md:text-lg font-montserrat text-slate-700 dark:text-slate-400 leading-relaxed">
+            I build fast, polished interfaces and the robust backends and REST
+            APIs behind them, mostly with the <b>MERN stack</b>. I like turning
+            ideas into web experiences people enjoy using.
+          </p>
+
+          {/* Buttons */}
+          <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
+            <button
+              onClick={openForm}
+              className="bg-gradient-to-r from-coral-red to-red-500 hover:from-red-500 hover:to-red-500 text-white text-lg py-3 px-8 rounded-full shadow-lg shadow-red-500/25 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              Contact Me
+            </button>
+            <a
+              href="#projects"
+              className="border-2 border-coral-red text-coral-red text-lg py-3 px-8 rounded-full hover:bg-coral-red hover:text-white transition-all duration-300"
+            >
+              View Projects
+            </a>
+          </div>
+
+          {/* Socials */}
+          <div className="mt-8 flex justify-center lg:justify-start items-center gap-5">
+            {socials.map((s) => (
+              <a
+                key={s.alt}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={s.alt}
+                className="transition-transform duration-300 hover:-translate-y-1 hover:scale-110"
+              >
+                <img src={s.src} alt={s.alt} className="w-9 h-9 object-contain" />
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Title */}
-      <h1
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        className="text-3xl md:text-5xl font-bold font-palanquin text-center"
-      >
-        <span className="text-coral-red pr-2">Nitin</span>
-        Prajapati
-      </h1>
-
-      {/* Role Tagline */}
-      <p
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        className="text-lg text-coral-red font-montserrat mt-2 mb-4"
-      >
-        {"< Full Stack Web Developer />"}
-      </p>
-
-      {/* Intro Description */}
-      <p
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        className="text-base md:text-lg font-montserrat text-slate-700 dark:text-slate-400 text-center md:w-3/4 lg:w-2/3 mb-6 px-4 leading-relaxed"
-      >
-        I am a passionate Full Stack Web Developer with expertise in{" "}
-        <b>MERN stack</b>. From crafting engaging user interfaces to building
-        robust backends and RESTful APIs, I enjoy bringing ideas to life in the
-        digital world. With creativity and problem-solving skills, I strive to
-        deliver exceptional web experiences.
-      </p>
-
-      {/* Social Links */}
-      <div
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        className="flex justify-center items-center gap-6 mb-8"
-      >
-        <a href="https://www.linkedin.com/in/nitin-prajapati1/" target="_blank" rel="noreferrer">
-          <img src={link} alt="LinkedIn" width={50} />
-        </a>
-        <a href="https://github.com/Nitinpr1" target="_blank" rel="noreferrer">
-          <img src={github} alt="GitHub" width={40} />
-        </a>
-        <a
-          href="https://www.instagram.com/nitin_prajapati15/"
-          target="_blank"
-          rel="noreferrer"
+        {/* RIGHT: code editor card */}
+        <div
+          data-aos="fade-left"
+          data-aos-duration="900"
+          className="relative min-w-0 mx-auto w-full max-w-lg mt-8 lg:mt-0"
         >
-          <img src={instagram} alt="Instagram" width={40} />
-        </a>
-        <a href="https://twitter.com/NitinPr_01" target="_blank" rel="noreferrer">
-          <img src={twitter} alt="Twitter" width={40} />
-        </a>
-      </div>
+          {/* soft glow behind the card */}
+          <div className="absolute -inset-2 sm:-inset-4 rounded-[2rem] bg-gradient-to-br from-coral-red/30 via-orange-300/20 to-blue-500/20 blur-2xl" />
 
-      {/* Buttons */}
-      <div className="flex flex-wrap p-2 md:p-1 md:flex-nowrap justify-center items-center gap-4 w-full max-w-[500px]">
-        <button
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          onClick={openForm}
-          className="bg-gradient-to-r from-coral-red to-red-500 hover:from-red-500 hover:to-red-500 text-white text-lg py-3 px-6 rounded-full w-full shadow-md transition-all duration-300"
-        >
-          Contact Me
-        </button>
-        <a
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          href="#projects"
-          className="border-2 border-coral-red text-coral-red text-lg py-3 px-6 rounded-full w-full text-center hover:bg-coral-red hover:text-white transition-all duration-300 shadow-md"
-        >
-          View Projects
-        </a>
+          {/* Avatar, overlapping the card corner */}
+          <div className="absolute -top-9 right-3 sm:-right-8 z-20 w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-br from-orange-300 to-coral-red shadow-xl">
+            <svg
+              viewBox="0 0 100 100"
+              role="img"
+              aria-label="Friendly bot avatar"
+              className="w-full h-full rounded-full border-2 border-white dark:border-slate-900"
+            >
+              <rect width="100" height="100" fill="#1e293b" />
+              {/* body */}
+              <path d="M22 100 C22 79 36 72 50 72 C64 72 78 79 78 100 Z" fill="#ff6452" />
+              <text x="50" y="92" textAnchor="middle" fontSize="9" fontFamily="monospace" fill="#fff">
+                {"</>"}
+              </text>
+              {/* neck */}
+              <rect x="44" y="65" width="12" height="8" rx="2" fill="#94a3b8" />
+              {/* antenna */}
+              <line x1="50" y1="17" x2="50" y2="27" stroke="#94a3b8" strokeWidth="2.5" strokeLinecap="round" />
+              <circle cx="50" cy="14" r="3.5" fill="#ff6452" className="motion-safe:animate-pulse" />
+              {/* ears */}
+              <rect x="19" y="40" width="7" height="14" rx="3" fill="#ff6452" />
+              <rect x="74" y="40" width="7" height="14" rx="3" fill="#ff6452" />
+              {/* head */}
+              <rect x="25" y="26" width="50" height="40" rx="13" fill="#f1f5f9" />
+              {/* face screen */}
+              <rect x="31" y="33" width="38" height="26" rx="9" fill="#0f172a" />
+              {/* eyes */}
+              <circle cx="42" cy="44" r="4.2" fill="#38bdf8" />
+              <circle cx="58" cy="44" r="4.2" fill="#38bdf8" />
+              <circle cx="43.2" cy="42.8" r="1.2" fill="#fff" />
+              <circle cx="59.2" cy="42.8" r="1.2" fill="#fff" />
+              {/* smile */}
+              <path d="M43 52 Q50 57.5 57 52" fill="none" stroke="#38bdf8" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </div>
+
+          <div className="relative rounded-2xl overflow-hidden border border-slate-700/60 bg-[#0d1220]/95 shadow-2xl">
+            {/* window bar */}
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-700/60 bg-slate-900/80">
+              <span className="w-3 h-3 rounded-full bg-red-400" />
+              <span className="w-3 h-3 rounded-full bg-yellow-400" />
+              <span className="w-3 h-3 rounded-full bg-green-400" />
+              <span className="ml-3 text-xs text-slate-400 font-mono">
+                developer.js
+              </span>
+            </div>
+
+            {/* code */}
+            <pre className="p-4 sm:p-6 text-xs sm:text-sm leading-6 sm:leading-7 font-mono text-slate-300 whitespace-pre-wrap break-words">
+              <code>
+                <span className="text-purple-400">const</span>{" "}
+                <span className="text-blue-300">developer</span> = {"{"}
+                {"\n  "}name: <span className="text-green-300">"Nitin Prajapati"</span>,
+                {"\n  "}role: <span className="text-green-300">"Full Stack Developer"</span>,
+                {"\n  "}stack: [
+                {stack.map((t, i) => (
+                  <span key={t}>
+                    <span className="text-green-300">"{t}"</span>
+                    {i < stack.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+                ],
+                {"\n  "}builds: <span className="text-green-300">"UIs, Backends, APIs & ideas"</span>,
+                {"\n"}
+                {"}"};
+                <span className="motion-safe:animate-pulse text-coral-red"> ▍</span>
+              </code>
+            </pre>
+          </div>
+
+          {/* floating stack chips */}
+          <div className="relative z-10 mt-5 flex flex-wrap justify-center gap-2">
+            {stack.map((t) => (
+              <span
+                key={t}
+                className="rounded-full border border-slate-300 dark:border-slate-700 bg-white/70 dark:bg-slate-900/70 backdrop-blur px-3 py-1 text-xs font-montserrat text-slate-700 dark:text-slate-300"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
-
 
 export default Home;
